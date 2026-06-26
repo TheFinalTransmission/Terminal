@@ -1,0 +1,35 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FINAL TRANSMISSION // NODE_DECODER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="terminal-container">
+        <header class="terminal-header">
+            <p>BROADCAST NODE INTERCEPT // SECURE CONNECTION ESTABLISHED</p>
+            <p>SYSTEM PROTOCOL: UTF-8 DECOMPILER</p>
+            <hr>
+        </header>
+        
+        <main class="terminal-body">
+            <div class="output-log" id="outputLog">
+                <p class="system-text">> COM-NODE INITIALIZED...</p>
+                <p class="system-text">> READY FOR INTERCEPT BITSTREAM.</p>
+            </div>
+            
+            <div class="input-line">
+                <span class="prompt">ENTER BINARY DATA:</span>
+                <textarea id="binaryInput" placeholder="01000101 01001100..." rows="3"></textarea>
+            </div>
+            <button onclick="decodeBinary()" class="decode-btn">EXECUTE DECOMPILER</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
